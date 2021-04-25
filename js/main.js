@@ -1,7 +1,33 @@
 function clicou () {
+    //injeta um texto dentro do elemento que tem o id agradecimento:
     document.getElementById("agradecimento").innerHTML="<b>Obrigado por clicar!</b>"
 }
 
+function redirecionar(){
+    // abre uma nova aba do navegador com o site abaixo:
+    window.open("https://rocketseat.com.br/");
+    // abre o site na mesma página:
+    //window.location.href = "https://rocketseat.com.br/";
+}
+
+function trocar (elemento){
+    //document.getElementById("mousemove").innerHTML="Obrigado por passar o mouse.";
+    elemento.innerHTML = "Obrigado por passar o mouse.";
+    
+}
+
+function voltar (elemento){
+    elemento.innerHTML = "Passe o mouse aqui...";
+    
+}
+
+function load() {
+    console.log("Página Carregada!");
+}
+
+function funcaoChange(elemento){
+    console.log(elemento.value);
+}
 // Comandos básicos:
 
 //alert('Meu primeiro JS');

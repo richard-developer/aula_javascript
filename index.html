@@ -7,8 +7,19 @@
     <script src="js/main.js"></script>
     
 </head>
-<body>
+<body onload="load()">
         <button type="button" onclick="clicou()"> Clique Aqui! </button>
-        <p id="agradecimento"></p>
+        <p id="agradecimento" onclick="redirecionar()"></p>
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui...</p>
+        <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mouse aqui...</p>
+
+        <p>Selecione uma das opções:</p>
+        <select onchange="funcaoChange(this)">
+            
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+            
+        </select>
 </body>
 </html>
